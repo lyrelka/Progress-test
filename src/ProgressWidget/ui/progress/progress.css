@@ -1,0 +1,45 @@
+.progress-loader-container {
+  width: 120px;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  line-height: 0;
+}
+
+.progress-loader-svg {
+  max-width: 120px;
+  max-height: 120px;
+  transform: rotate(-90deg);
+}
+
+.progress-loader-background {
+  fill: none;
+  stroke: var(--additional-color, #dee6ef);
+  stroke-width: 10px;
+}
+
+.progress-loader {
+  fill: none;
+  stroke-width: 10px;
+  stroke: var(--accent-color, #005cfe);
+  animation: loading infinite linear 1.5s;
+  animation-play-state: paused;
+  transform-origin: center;
+}
+
+.hide {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+@keyframes loading {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate {
+  animation: loading infinite linear 1.5s;
+}

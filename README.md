@@ -2,9 +2,7 @@
 Стек: HTML, CSS, TS, Vite
 
 ## Превью
-<video width="320" height="240" controls>
-  <source src="./preview/Recording 2025-07-11 035000.mp4" type="video/mp4">
-</video>
+![Пример работы виджета](./preview/record.gif)
 
 ## Структура приложения
 Для демонстрации работы реализован компонент `ProgressWidget`. Виджет состоит из самого блока `Progress` и настроек для управления состоянием блока: заполненности, анимации и прозрачности.
@@ -19,7 +17,7 @@
 - `Presenter` - компонент объединяющий представление лоадера с его моделью, слушает события, вызывает необходимые изменения в отображении.
 
 Устройство перерисовки блока:
-```
+```ts
 class Presenter {
   constructor(private view: View, private model: Model, private events: IEvents) {
     //При первой отрисовки инициализирует состояние
@@ -43,7 +41,7 @@ class Presenter {
 
 ### Механизм внешнего управления
 Для независимого использования блока необходимо:
-```
+```ts
 //Импортировать блок Progres
 import { Progress } from "../Progress";
 import { EventEmitter } from "../Progress/base/EventEmitter";
@@ -58,13 +56,13 @@ export class ProgressWidget extends HTMLElement {
   constructor() {
     super();
 
+    //Добавить блок в разметку
+    //Задать ему id
     this.innerHTML = `
       <style>${style}</style>
       <div id="progress-widget" class="progress-widget">
         <h4 class="title">Progress</h4>
-        //Добавить блок в разметку
         <my-progress 
-          //Задать ему id
           id="widget-loader"
           class="widget-loader"
         ></my-progress>
@@ -98,8 +96,11 @@ export class ProgressWidget extends HTMLElement {
 ```
 
 Варианты изменения модели:
-```
+```ts
 progress.model.value = 50; //Контролирует заполненость элемента
 progress.model.animate = true; //Контролирует анимацию элемента
 progress.model.hide = true; //Контролирует прозрачность элемента
 ```
+
+## Ссылка на деплой
+https://lyrelka.github.io/Progress-test/

@@ -26,6 +26,3 @@ export class CheckboxUI extends HTMLElement {
     `
   }
 }
-
-
-customElements.define('my-checkboxui', CheckboxUI);

@@ -15,6 +15,10 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --progress-background-color: #fefefe;
+  --progress-additional-color: #dee6ef;
+  --progress-accent-color: #005cfe;
 }
 
 body {

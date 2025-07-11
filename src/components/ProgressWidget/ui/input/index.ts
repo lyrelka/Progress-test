@@ -25,5 +25,3 @@ export class InputUI extends HTMLElement {
     `
   }
 }
-
-customElements.define('my-inputui', InputUI);

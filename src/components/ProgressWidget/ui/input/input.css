@@ -5,7 +5,6 @@
 	cursor: pointer;
 	color: inherit;
 	align-items: center;
-	width: 100%;
 }
 
 .input-ui:hover {
@@ -38,7 +37,7 @@
 
 .input:focus {
 	outline: none;
-	border-color: var(--accent-color, #005cfe);
+	border-color: var(--progress-accent-color, #005cfe);
 }
 
 .input-label {

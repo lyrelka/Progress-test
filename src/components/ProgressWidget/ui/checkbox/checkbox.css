@@ -5,7 +5,6 @@
 	cursor: pointer;
 	color: inherit;
 	align-items: center;
-	width: 100%;
 }
 
 .checkbox-ui:hover {
@@ -19,7 +18,7 @@
 	width: 2.8rem;
 	height: 1.8rem;
 	margin: 0;
-	background-color: var(--additional-color, #dee6ef);
+	background-color: var(--progress-additional-color, #dee6ef);
 	border-radius: 0.9rem;
 	cursor: pointer;
 }
@@ -30,7 +29,7 @@
 	box-sizing: border-box;
 	margin: 0.15rem;
 	height: 1.5rem;
-	background-color: var(--background-color, #fefefe);
+	background-color: var(--progress-background-color, #fefefe);
 	border-radius: 100%;
   aspect-ratio: 1/1;
 	transform: translateX(0);
@@ -42,11 +41,11 @@
 }
 
 .checkbox-input:checked {
-	background-color: var(--accent-color, #005cfe);
+	background-color: var(--progress-accent-color, #005cfe);
 }
 
 .checkbox-input:focus-visible {
-	outline: 0.1rem solid var(--accent-color, #005cfe);
+	outline: 0.1rem solid var(--progress-accent-color, #005cfe);
 	outline-offset: 0.05rem;
 }
 

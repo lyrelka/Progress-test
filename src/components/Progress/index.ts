@@ -38,5 +38,3 @@ export class Progress extends HTMLElement {
     }
   }
 }
-
-customElements.define('my-progress', Progress);

@@ -6,6 +6,10 @@ import style from "./ProgressWidget.css?inline";
 import { CheckboxUI } from "./ui/checkbox";
 import { InputUI } from "./ui/input";
 
+customElements.define('my-progress', Progress);
+customElements.define('my-checkboxui', CheckboxUI);
+customElements.define('my-inputui', InputUI);
+
 
 export class ProgressWidget extends HTMLElement {
   constructor() {
@@ -44,5 +48,3 @@ export class ProgressWidget extends HTMLElement {
     }
   }
 }
-
-customElements.define('my-progresswidget', ProgressWidget);

@@ -13,14 +13,14 @@
 
 .progress-loader-background {
   fill: none;
-  stroke: var(--additional-color, #dee6ef);
+  stroke: var(--progress-additional-color, #dee6ef);
   stroke-width: 10px;
 }
 
 .progress-loader {
   fill: none;
   stroke-width: 10px;
-  stroke: var(--accent-color, #005cfe);
+  stroke: var(--progress-accent-color, #005cfe);
   animation: loading infinite linear 1.5s;
   animation-play-state: paused;
   transform-origin: center;

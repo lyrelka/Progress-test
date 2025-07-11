@@ -1,0 +1,53 @@
+.title {
+  position: absolute;
+  left: 1.25rem;
+  top: 1.65rem;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.progress-widget {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  width: 320px;
+  height: 568px;
+  background-color: var(--background-color, #fefefe);
+  padding: 1.25rem;
+  box-sizing: border-box;
+  gap: 4.2rem;
+  font-size: 0.9rem;
+}
+
+.widget-loader {
+  align-self: end;
+  padding-bottom: 1.5rem;
+}
+
+.settings {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding-right: 0.5rem;
+}
+
+@media (orientation: landscape) {
+  .progress-widget {
+    width: 568px;
+    height: 320px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-items: start;
+    gap: 3.5rem;
+  }
+
+  .widget-loader {
+    justify-self: end;
+    align-self: center;
+    padding-right: 1.85rem;
+    padding-bottom: 0;
+  }
+}

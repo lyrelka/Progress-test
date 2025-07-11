@@ -1,2 +1,2 @@
 import './style.css'
-import { ProgressWidget } from './ProgressWidget';
+import { ProgressWidget } from './components/ProgressWidget';
